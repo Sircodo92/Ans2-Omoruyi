@@ -1,0 +1,14 @@
+<tr class="{{highlightIfNoWebsite this.Website}}"></tr>
+    <td>{{this.Movie_ID}}</td>
+    <td>{{this.Title}}</td>
+    <td>{{this.Year}}</td>
+    <td>{{this.Director}}</td>
+    <td>
+        {{#if this.Website}}
+        <a href="{{this.Website}}" target="_blank">{{this.Website}}</a>
+        {{else}}
+        N/A
+        {{/if}}
+    </td>
+    <td><a href="/movies/{{this.Movie_ID}}">View Details</a></td>
+</tr>

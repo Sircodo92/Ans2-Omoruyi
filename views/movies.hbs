@@ -1,0 +1,10 @@
+<h2>Movie List</h2>
+<div>
+    {{#each movies}}
+        <div>
+            <a href="/movies/{{this.Movie_ID}}">{{this.Title}} ({{this.Year}})</a>
+        </div>
+    {{/each}}
+</div>
+<a href="/">Back to Homepage</a>
+
